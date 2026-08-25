@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberLeek | CYLK</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #050805;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 8%;
+      border-bottom: 1px solid #173117;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: #63ff19;
+    }
+
+    nav a {
+      color: #bbb;
+      text-decoration: none;
+      margin-left: 25px;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background:
+        radial-gradient(circle at center, #12340b 0%, #050805 55%);
+    }
+
+    .badge {
+      color: #63ff19;
+      border: 1px solid #63ff19;
+      border-radius: 30px;
+      padding: 8px 18px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      font-size: clamp(55px, 10vw, 120px);
+      letter-spacing: 5px;
+    }
+
+    h1 span {
+      color: #63ff19;
+    }
+
+    .hero h2 {
+      color: #63ff19;
+      letter-spacing: 8px;
+      margin: 10px 0 25px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #aaa;
+      font-size: 19px;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 35px;
+    }
+
+    button {
+      background: #63ff19;
+      color: #071006;
+      border: none;
+      padding: 15px 28px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 6px;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 45px;
+    }
+
+    .title span {
+      color: #63ff19;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #0b100b;
+      border: 1px solid #1d351a;
+      border-radius: 14px;
+      padding: 30px;
+    }
+
+    .card h3 {
+      color: #63ff19;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .contract {
+      text-align: center;
+      background: #0b100b;
+      border: 1px solid #63ff19;
+      border-radius: 14px;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .contract code {
+      display: block;
+      color: #63ff19;
+      margin-top: 18px;
+      word-break: break-all;
+    }
+
+    .warning {
+      color: #aaa;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #173117;
+      text-align: center;
+      padding: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">CYBER<span>LEEK</span></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#tokenomics">Tokenomics</a>
+    <a href="#contract">Contract</a>
+  </div>
+</nav>
+
+<div class="hero">
+
+  <div class="badge">BNB SMART CHAIN TESTNET</div>
+
+  <h1>CYBER<span>LEEK</span></h1>
+
+  <h2>CYLK</h2>
+
+  <p>
+    CyberLeek is an experimental community-driven token project
+    exploring decentralized technology, transparency and Web3.
+  </p>
+
+  <div class="buttons">
+    <button onclick="location.href='#contract'">
+      View Contract
+    </button>
+
+    <button onclick="navigator.clipboard.writeText('0x8780524A382cC36ff340183A8Bc9fCbFcD7284fD')">
+      Copy Contract
+    </button>
+  </div>
+
+</div>
+
+<section id="about">
+
+  <h2 class="title">ABOUT <span>CYBERLEEK</span></h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Community</h3>
+      <p>
+        CYLK is being developed as a community-focused Web3 project.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Transparent</h3>
+      <p>
+        Token supply and transactions can be inspected directly on-chain.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Experimental</h3>
+      <p>
+        CyberLeek is currently in its testnet development phase.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="tokenomics">
+
+  <h2 class="title"><span>CYLK</span> TOKENOMICS</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Token Name</h3>
+      <p>CyberLeek</p>
+    </div>
+
+    <div class="card">
+      <h3>Symbol</h3>
+      <p>CYLK</p>
+    </div>
+
+    <div class="card">
+      <h3>Total Supply</h3>
+      <p>100,000,000 CYLK</p>
+    </div>
+
+    <div class="card">
+      <h3>Decimals</h3>
+      <p>18</p>
+    </div>
+
+    <div class="card">
+      <h3>Network</h3>
+      <p>BNB Smart Chain Testnet</p>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="contract">
+
+  <h2 class="title">SMART <span>CONTRACT</span></h2>
+
+  <div class="contract">
+
+    <h3>CYLK Testnet Contract</h3>
+
+    <code>
+      0x8780524A382cC36ff340183A8Bc9fCbFcD7284fD
+    </code>
+
+    <p class="warning">
+      CyberLeek is currently deployed on BNB Smart Chain Testnet.
+      CYLK testnet tokens have no monetary value.
+    </p>
+
+  </div>
+
+</section>
+
+<footer>
+  © 2026 CyberLeek — CYLK
+</footer>
+
+</body>
+</html>
